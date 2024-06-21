@@ -30,7 +30,7 @@ namespace RealEstate_Dapper_Api.Controllers
             }
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id}") ]
         public async Task<IActionResult> GetCategoryByID(int id)
         {
             try
