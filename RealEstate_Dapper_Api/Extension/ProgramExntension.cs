@@ -1,5 +1,6 @@
 ﻿using RealEstate_Dapper_Api.Models.DapperContext;
 using RealEstate_Dapper_Api.Repositories.CategoryRepository;
+using RealEstate_Dapper_Api.Repositories.ProductRepository;
 
 namespace RealEstate_Dapper_Api.Extension
 {
@@ -9,6 +10,7 @@ namespace RealEstate_Dapper_Api.Extension
         {
             services.AddTransient<Context>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IProductRepository, ProductRepository>();
         }
     }
 }
